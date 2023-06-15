@@ -30,12 +30,12 @@
             ],
             "scripts": [
               {
-                "input": "./node_modules/bootstrap/dist/js/bootstrap.js",
-                "inject": false
+                "input": "./node_modules/jquery/dist/jquery.js",
+                "inject": true
               },
               {
-                "input": "./node_modules/jquery/dist/jquery.js",
-                "inject": false
+                "input": "./node_modules/bootstrap/dist/js/bootstrap.js",
+                "inject": true
               }
             ]
           },

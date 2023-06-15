@@ -1,1 +1,43 @@
-<p>carousel works!</p>
+<div class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img
+        class="slide-image"
+        src="http://zhangblog.cn:7001/public/banner/banner1.jpg"
+      />
+    </div>
+    <div class="item">
+      <img
+        class="slide-image"
+        src="http://zhangblog.cn:7001/public/banner/banner2.jpg"
+      />
+    </div>
+    <div class="item">
+      <img
+        class="slide-image"
+        src="http://zhangblog.cn:7001/public/banner/banner3.jpg"
+      />
+    </div>
+  </div>
+
+  <a
+    class="left carousel-control"
+    href="javascript: $('.carousel').carousel('prev')"
+    role="button"
+  >
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  </a>
+  <a
+    class="right carousel-control"
+    href="javascript: $('.carousel').carousel('next')"
+    role="button"
+  >
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  </a>
+</div>
