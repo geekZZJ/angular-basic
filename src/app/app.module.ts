@@ -8,9 +8,10 @@ import { SearchComponent } from './search/search.component';
 import { ProductComponent } from './product/product.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { StarsComponent } from './stars/stars.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, SearchComponent, ProductComponent, CarouselComponent, StarsComponent],
+  declarations: [AppComponent, NavbarComponent, FooterComponent, SearchComponent, ProductComponent, CarouselComponent, StarsComponent, ProductDetailComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
