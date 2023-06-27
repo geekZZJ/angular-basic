@@ -1,12 +1,14 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filter'
+  name: 'filter',
 })
 export class FilterPipe implements PipeTransform {
-
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(list: any[], filterField?: string, keyword?: string): Array<any> {
+    if (!filterField || !keyword) return list;
+    return list.filter((item) => {
+      const fieldValue = item[filterField];
+      return fieldValue.includes(keyword);
+    });
   }
-
 }

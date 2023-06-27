@@ -11,7 +11,7 @@ import { debounceTime } from 'rxjs/operators';
 export class ProductComponent implements OnInit {
   imgList = 'http://zhangblog.cn:7001/public/banner/banner3.jpg';
   products: Product[];
-  private keyword: string;
+  keyword: string;
   titleFilter = new FormControl();
 
   constructor(private productService: ProductService) {
