@@ -5,11 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class ProductService {
   private products: Product[] = [
-    new Product(1, '第一个商品', 51, 1.4, '描述1', ['类目1', '类目2']),
-    new Product(2, '第二个商品', 52, 2.5, '描述2', ['类目1', '类目2']),
-    new Product(3, '第三个商品', 53, 0.3, '描述3', ['类目1', '类目2']),
-    new Product(4, '第四个商品', 57, 0.3, '描述4', ['类目1', '类目2']),
-    new Product(5, '第五个商品', 59, 0.3, '描述5', ['类目1', '类目2']),
+    new Product(1, '第一个商品', 51, 1.4, '描述1', ['电子产品', '硬件设备']),
+    new Product(2, '第二个商品', 52, 2.5, '描述2', ['电子产品', '硬件设备']),
+    new Product(3, '第三个商品', 53, 0.3, '描述3', ['电子产品', '硬件设备']),
+    new Product(4, '第四个商品', 57, 0.3, '描述4', ['硬件设备', '图书']),
+    new Product(5, '第五个商品', 59, 0.3, '描述5', ['硬件设备', '图书']),
   ];
 
   private comments: Comment[] = [
@@ -20,6 +20,10 @@ export class ProductService {
   ];
 
   constructor() {}
+
+  getAllCategories(): string[] {
+    return ['电子产品', '硬件设备', '图书'];
+  }
 
   getProducts(): Product[] {
     return this.products;
