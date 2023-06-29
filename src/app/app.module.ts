@@ -14,7 +14,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductService } from './shared/product.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './pipe/filter.pipe';
-import { TemplateFormComponent } from './template-form/template-form.component';
 
 const routeConfig: Routes = [
   { path: '', component: HomeComponent },
@@ -36,7 +35,6 @@ const routeConfig: Routes = [
     ProductDetailComponent,
     HomeComponent,
     FilterPipe,
-    TemplateFormComponent,
   ],
   imports: [
     BrowserModule,
