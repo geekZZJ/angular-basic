@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -19,7 +20,7 @@ export class ProductService {
     new Comment(4, 1, '2022-05-02 22:22:22', '张三', 1, '评论内容四'),
   ];
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   getAllCategories(): string[] {
     return ['电子产品', '硬件设备', '图书'];
